@@ -1,0 +1,139 @@
+﻿@page "/ViewOrders"
+@inject NavigationManager NavigationManager
+<div class="d-flex justify-content-between">
+    <h4>
+        DEPARTMENT NAME
+    </h4>
+    <div>
+        <h5>
+            Beshoy Mikhail
+        </h5>
+        <p>Account Setting</p>
+    </div>
+</div>
+<hr class="mt-0" />
+<div class="container-fluid mt-2">
+    <h5>Orders list</h5>
+    <form class="row justify-content-center">
+        <div class="col-auto">
+            <input type="date" class="form-control" id="inp3" placeholder="Date from">
+        </div>
+        <div class="col-auto">
+            <input type="date" class="form-control" id="inp3" placeholder="Date to">
+        </div>
+        <div class="col-auto align-content-around">
+            <input type="checkbox" class="form-check" id="inp4" placeholder="Status">
+            <label class="form-label" for="inp4">View deleted</label>
+        </div>
+    </form>
+</div>
+<div class="m-4">
+    <h4>
+        Items Wasted
+    </h4>
+    <table class="table mt-3 table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Date</th>
+                <th scope="col"> By Salesman </th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Region</th>
+                <th scope="col"> Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>@DateTime.Now</td>
+                <td></td>
+                <td>Beshoy</td>
+                <td>Cairo</td>
+                <td></td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>View</option>
+                        <option value="1">Edit</option>
+                        <option value="2">Delete</option>
+                    </select>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="m-4">
+    <h4>
+        Approved Orders
+    </h4>
+    <table class="table mt-3 table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Date</th>
+                <th scope="col"> By Salesman </th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Region</th>
+                <th scope="col">Status</th>
+                <th scope="col"> Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>@DateTime.Now</td>
+                <td></td>
+                <td>Beshoy</td>
+                <td>Cairo</td>
+                <td></td>
+                <td>Pending / Being Prepared/ Ready / Picked Up / Moved / Delivered </td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>View</option>
+                        <option value="1"> Un-approve</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="m-4">
+    <h4>
+        Confirmed Orders
+    </h4>
+    <table class="table mt-3 table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Order #</th>
+                <th scope="col">Date</th>
+                <th scope="col"> By Salesman </th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Customer Region</th>
+                <th scope="col">Status</th>
+                <th scope="col">Confirmed</th>
+                <th scope="col"> Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>@DateTime.Now</td>
+                <td></td>
+                <td>Beshoy</td>
+                <td>Cairo</td>
+                <td></td>
+                <td>Pending / Being Prepared/ Ready / Picked Up / Moved / Delivered </td>
+                <td>By ... Time ... </td>
+                <td>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>View</option>
+                        <option value="1"> Un-approve</option>
+                    </select>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+@code {
+
+}

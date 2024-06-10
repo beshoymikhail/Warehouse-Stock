@@ -1,0 +1,79 @@
+﻿@page "/ViewWaste"
+@inject NavigationManager NavigationManager
+<div class="d-flex justify-content-between">
+    <h4>
+        DEPARTMENT NAME
+    </h4>
+    <div>
+        <h5>
+            Beshoy Mikhail
+        </h5>
+        <p>Account Setting</p>
+    </div>
+</div>
+<hr class="mt-0" />
+<button class="btn-icon" onclick="@(()=>{NavigationManager.NavigateTo("/");})">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M20 26.56L11.3066 17.8667C10.28 16.84 10.28 15.16 11.3066 14.1333L20 5.44" stroke="#009DE0" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <span class="text-black fs-6">
+        Back to waste list
+    </span>
+</button>
+<div class="container-fluid mt-2">
+    <h5>View Waste</h5>
+    <form class="row ">
+        <div class="col-auto">
+            <input type="text" class="form-control" id="inp1" placeholder="Waste ID">
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" id="inp2" placeholder="Warehouse Manager">
+        </div>
+        <div class="col-auto">
+            <input type="date" class="form-control" id="inp3" placeholder="Date">
+        </div>
+        <div class="form-check col-auto">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">view deleted</label>
+        </div>
+    </form>
+</div>
+<div class="m-4">
+    <h4>
+        Items Wasted
+    </h4>
+    <table class="table mt-3 table-striped text-center">
+        <thead>
+            <tr>
+                <th scope="col">
+                    Item Code & Name
+                </th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    3323 - Mexican Sugar Ic 45 - 50Kg Bag
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>
+                    3323 - Mexican Sugar Ic 45 - 50Kg Bag
+                </td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>
+                    3323 - Mexican Sugar Ic 45 - 50Kg Bag
+                </td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+@code {
+
+}
