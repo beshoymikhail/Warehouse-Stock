@@ -1,0 +1,18 @@
+﻿.warehouse-table {
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+    .warehouse-table thead tr {
+        background-color: #2A70AB;
+        color:white;
+
+    }
+.balance-div {
+    border: 1px solid #FF9700;
+    border-radius: 0.5rem;
+    background-color: #FFF8F8;
+    color:red;
+    padding:1rem;
+    font-weight:bold;
+    font-size:14px;
+}

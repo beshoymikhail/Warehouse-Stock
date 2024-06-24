@@ -1,9 +1,17 @@
 ﻿@page "/Report"
 <div class="m-3">
-    <h3>Warehouse Stock report</h3>
-    <input type="date" class="form-control" />
+    <h2 class="darkblue text-center">Preparation Department</h2>
+    <div class="d-flex align-items-center justify-content-between">
+        <div>
+            <h3 class="mb-0">Warehouse Stock Report</h3>
+            <p>@DateTime.Now.ToString("dddd, MMMM dd, yyyy")</p>
+        </div>
+        <div>
+            <input class="form-control" type="date" placeholder="Select day" />
+        </div>
+    </div>
 
-    <table class="table mt-3 table-striped">
+    <table class="table mt-3 table-striped warehouse-table text-center">
         <thead>
             <tr>
                 <th scope="col">Item</th>
@@ -25,8 +33,59 @@
                 <td>5</td>
                 <td>50</td>
             </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
+           <tr>
+                <th scope="row">1</th>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
+             <tr>
+                <th scope="row">1</th>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>50</td>
+            </tr>
         </tbody>
     </table>
+    <hr />
+    <div class="d-flex justify-content-end">
+        <div class="balance-div">
+            Default Balance= (IN+IN) - (OUT+OUT)
+        </div>
+    </div>
 </div>
 @code {
 

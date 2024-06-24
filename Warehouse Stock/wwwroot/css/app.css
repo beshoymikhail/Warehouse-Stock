@@ -1,5 +1,7 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-
+.darkblue {
+    color: #003765;
+}
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -104,3 +106,25 @@ a, .btn-link {
     border: none;
     background: inherit;
 }
+.form-control{
+    width:auto;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+    .search-container input[type="search"] {
+        padding-right: 2.5rem; /* Adjust the padding to fit the icon */
+    }
+
+    .search-container svg {
+        position: absolute;
+        top: 50%;
+        right: 10px; /* Adjust as needed */
+        transform: translateY(-50%);
+        width: 1.5rem; /* Adjust size as needed */
+        height: 1.5rem; /* Adjust size as needed */
+        fill: currentColor;
+    }
